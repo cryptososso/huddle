@@ -113,7 +113,20 @@ body{
     opacity: 0.6;
     color: #ffffff;
     cursor: pointer;
+    transition: transform 1s ease-in-out;
 }
+
+.footer__list--link i{
+    transition: transform 1s ease-in-out;
+}
+
+.footer__list--link i:hover,
+.footer__list--link i:focus{
+    color: rgba(220, 26, 126, 0.8);
+    transform: scale(1.2);
+}
+
+
 
 /* Responsive */
 
@@ -188,9 +201,27 @@ body{
       .main__button--link{
         text-decoration: none;
         margin: 0 auto;
+        color: #ffffff;
       }
 
-      
+      .main__button--link{
+        text-decoration: none;
+        color: blueviolet;
+       }
+
+
+      .main__button:hover,
+     .main__button:focus{
+    background-color: rgba(220, 26, 126, 0.8);
+    color: #ffffff;
+    transform: scale(0.9);
+   }
+
+   .main__button--link:hover,
+   .main__button--link:focus{
+    color: #ffffff;
+    }
+
     .footer__list--items{
       display: flex;
       flex-direction: row;
